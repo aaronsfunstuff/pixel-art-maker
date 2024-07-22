@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel Art Creator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Pixel Art Creator</h1>
+            <h1><span class="logo">🎨</span> Pixel Art Creator</h1>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -24,70 +26,143 @@
 
     <main id="home">
         <section class="hero">
-            <h2>Create Stunning Pixel Art</h2>
-            <p>Unleash your creativity with our easy-to-use pixel art tool. Start designing your masterpiece today!</p>
-            <a href="#create" class="cta-button">Start Creating</a>
+            <div class="hero-text">
+                <h2>Create Stunning Pixel Art</h2>
+                <p>Unleash your creativity with our easy-to-use pixel art tool. Start designing your masterpiece today!</p>
+                <a href="create.html" class="cta-button">Start Creating</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://www.creativefabrica.com/wp-content/uploads/2022/12/27/Pikachu-Pixel-Art-54720460-1.png" alt="Pixel Art Hero">
+            </div>
         </section>
 
         <section class="features" id="features">
             <div class="container">
-                <div class="feature">
-                    <img src="https://i.pinimg.com/564x/b1/24/b3/b124b3fa2943117b01e7d2226829dfa4.jpg" alt="Feature 1">
-                    <h3>Easy to Use</h3>
-                    <p>Create pixel art effortlessly with our intuitive interface.</p>
-                </div>
-                <div class="feature">
-                    <img src="https://www.creativefabrica.com/wp-content/uploads/2022/12/27/Pikachu-Pixel-Art-54720460-1.png" alt="Feature 2">
-                    <h3>Customizable Tools</h3>
-                    <p>Adjust colors, brush sizes, and more to fit your style.</p>
-                </div>
-                <div class="feature">
-                    <img src="https://easydrawingguides.com/wp-content/uploads/2021/09/Mario-Pixel-Art-step-by-step-drawing-tutorial-step-10.png" alt="Feature 3">
-                    <h3>Save and Share</h3>
-                    <p>Save your creations and share them with the world.</p>
+                <h2>Features</h2>
+                <div class="feature-cards">
+                    <div class="feature">
+                        <img src="https://i.pinimg.com/564x/b1/24/b3/b124b3fa2943117b01e7d2226829dfa4.jpg" alt="Feature 1">
+                        <h3>Easy to Use</h3>
+                        <p>Create pixel art effortlessly with our intuitive interface.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbt0pPKlnkdtxvEt_MS9RovbwOSnsvW2f_Lw&s" alt="Feature 2">
+                        <h3>Customizable Tools</h3>
+                        <p>Adjust colors, brush sizes, and more to fit your style.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="https://easydrawingguides.com/wp-content/uploads/2021/09/Mario-Pixel-Art-step-by-step-drawing-tutorial-step-10.png" alt="Feature 3">
+                        <h3>Save and Share</h3>
+                        <p>Save your creations and share them with the world.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="https://www.shutterstock.com/image-vector/food-pixel-art-icons-fast-260nw-1484721701.jpg" alt="Feature 4">
+                        <h3>Layer Support</h3>
+                        <p>Work with layers to create detailed and complex designs.</p>
+                    </div>
+                    <div class="feature">
+                        <img src="https://kemp21stcentury.weebly.com/uploads/1/7/1/4/17142550/finding-dory-pixel-art-pixel-art-lego-8bit-minecraft_orig.png" alt="Feature 5">
+                        <h3>Export Options</h3>
+                        <p>Export your work in various formats, including PNG and GIF.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="gallery-preview" id="gallery">
-            <h2>Pixel Art Gallery</h2>
-            <p>Explore some of the fantastic pixel art created by our users. Get inspired and start creating your own!</p>
-            <div class="gallery">
-                <img src="https://img.freepik.com/premium-vector/lightning-pixel-art-gaming-item-game-pixel-lightning_158677-585.jpg" alt="Pixel Art Example 1">
-                <img src="https://ih1.redbubble.net/image.3989292339.3317/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="Pixel Art Example 2">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsyye3xMMuqBEGOFijhBrfIu_NU3wdK3-edVhkzXNx2XR4CHs3555tfJvTM1ofg_KP_Eg&usqp=CAU" alt="Pixel Art Example 3">
+            <div class="container">
+                <h2>Pixel Art Gallery</h2>
+                <p>Explore some of the fantastic pixel art created by our users. Get inspired and start creating your own!</p>
+                <div class="gallery">
+                    <img src="https://img.freepik.com/premium-vector/lightning-pixel-art-gaming-item-game-pixel-lightning_158677-585.jpg" alt="Pixel Art Example 1">
+                    <img src="https://ih1.redbubble.net/image.3989292339.3317/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="Pixel Art Example 2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsyye3xMMuqBEGOFijhBrfIu_NU3wdK3-edVhkzXNx2XR4CHs3555tfJvTM1ofg_KP_Eg&usqp=CAU" alt="Pixel Art Example 3">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtlaw5nn860RTTW-bTTFPEQYzmxjmqkfVHuQ&s" alt="Pixel Art Example 4">
+                    <img src="https://i.pinimg.com/236x/33/6f/82/336f82c1da9b9764d2652e5aa35ce2ef.jpg" alt="Pixel Art Example 5">
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <h2>What Our Users Say</h2>
+                <div class="testimonial-cards">
+                    <div class="testimonial">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTva8PxNQFSHUPtITzUbE6V71GP4VWY0dwRBg&s" alt="User 1">
+                        <blockquote>
+                            <p>"The best pixel art tool I've ever used! It's simple, yet powerful. My go-to app for pixel art creations!"</p>
+                            <cite>- Alex J.</cite>
+                        </blockquote>
+                    </div>
+                    <div class="testimonial">
+                        <img src="https://yt3.googleusercontent.com/8RoVbl-Z7NWLG5Z10_PTJGIpYhLigba69ZSTJSuYePI0qiSBaL5mJYtLrPCQiSOe_v2ZuTk3=s900-c-k-c0x00ffffff-no-rj" alt="User 2">
+                        <blockquote>
+                            <p>"A must-have for anyone interested in pixel art. The customization options are endless, and the community is fantastic!"</p>
+                            <cite>- Taylor R.</cite>
+                        </blockquote>
+                    </div>
+                    <div class="testimonial">
+                        <img src="https://res.cloudinary.com/source-models/image/upload/remote_sourcemodels/jordan_k-perez_237197/Jordan-K-Perez-_2018_12004.jpg" alt="User 3">
+                        <blockquote>
+                            <p>"I love how easy it is to create and share my pixel art. The gallery is a great source of inspiration!"</p>
+                            <cite>- Jordan K.</cite>
+                        </blockquote>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="about" id="about">
-            <h2>About Us</h2>
-            <p>Pixel Art Creator is dedicated to providing a fun and easy way to create pixel art. Whether you’re a hobbyist or a professional, our tool is designed to help you bring your ideas to life. Learn more about our team and mission!</p>
-            <img src="about-us.png" alt="About Us" class="about-img">
+            <div class="container">
+                <h2>About Us</h2>
+                <div class="about-content">
+                    <p>Pixel Art Creator is dedicated to providing a fun and easy way to create pixel art. Whether you’re a hobbyist or a professional, our tool is designed to help you bring your ideas to life. Learn more about our team and mission!</p>
+                    <img src="https://i.seadn.io/gae/88F7Rb9P6LuwRSybaHEYZvnPuRcwwNF-g1bRCta4WaFHr9vkqlfO_PjJYkzjCJKanXmupFtAOjbFDe8s_P7bMwqyZBhPMaZt0b2aYg?auto=format&dpr=1&w=1000" alt="About Us" class="about-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for the latest updates, tips, and exclusive content.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="cta-button">Subscribe</button>
+                </form>
+            </div>
         </section>
 
         <section class="contact" id="contact">
-            <h2>Contact Us</h2>
-            <p>Have questions or feedback? We’d love to hear from you!</p>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have questions or feedback? We’d love to hear from you!</p>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
             <p>&copy; 2024 Pixel Art Creator. All rights reserved.</p>
-            <p>Follow us on <a href="#">Social Media</a></p>
+            <p>Follow us on 
+                <a href="#">Twitter</a>, 
+                <a href="#">Instagram</a>, and 
+                <a href="#">Facebook</a>
+            </p>
         </div>
     </footer>
 </body>
 </html>
+
