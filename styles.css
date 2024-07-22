@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f3f3; /* Pastel pink background */
+    color: #333;
+}
+
+header {
+    background-color: #c1d3fc; /* Pastel blue */
+    color: #333;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem 1rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #e4f8f0; /* Pastel green */
+    color: #333;
+}
+
+.hero h2 {
+    margin: 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: #f6c1c1; /* Pastel coral */
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #f7a0a0; /* Slightly darker pastel coral */
+}
+
+.features {
+    padding: 2rem 0;
+    background-color: #fff;
+}
+
+.features .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex: 1;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #fef6e4; /* Pastel cream */
+    border-radius: 5px;
+    text-align: center;
+}
+
+.feature h3 {
+    margin: 0 0 0.5rem 0;
+}
+
+.gallery-preview {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #e4f8f0; /* Pastel green */
+}
+
+.gallery-preview h2 {
+    margin: 0 0 1rem 0;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #c1d3fc; /* Pastel blue */
+    color: #333;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
