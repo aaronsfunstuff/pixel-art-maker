@@ -11,6 +11,7 @@ header {
     background-color: #c1d3fc; /* Pastel blue */
     color: #333;
     padding: 1rem 0;
+    border-bottom: 3px solid #a3b7e1; /* Slightly darker pastel blue for emphasis */
 }
 
 header .container {
@@ -24,6 +25,7 @@ header .container {
 
 header h1 {
     margin: 0;
+    font-size: 2rem;
 }
 
 nav ul {
@@ -34,12 +36,13 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 1rem;
+    margin-left: 1.5rem;
 }
 
 nav ul li a {
     color: #333;
     text-decoration: none;
+    font-size: 1rem;
 }
 
 nav ul li a:hover {
@@ -55,20 +58,30 @@ main {
     padding: 2rem 0;
     background-color: #e4f8f0; /* Pastel green */
     color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .hero h2 {
     margin: 0;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0 1rem 0;
 }
 
 .cta-button {
     display: inline-block;
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 1.5rem;
     margin-top: 1rem;
     background-color: #f6c1c1; /* Pastel coral */
     color: #333;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .cta-button:hover {
@@ -91,21 +104,37 @@ main {
     margin: 1rem;
     padding: 1rem;
     background-color: #fef6e4; /* Pastel cream */
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
 }
 
 .feature h3 {
     margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
 }
 
 .gallery-preview {
     text-align: center;
     padding: 2rem 0;
     background-color: #e4f8f0; /* Pastel green */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .gallery-preview h2 {
+    margin: 0 0 1rem 0;
+    font-size: 2rem;
+}
+
+.gallery-preview p {
+    font-size: 1.2rem;
     margin: 0 0 1rem 0;
 }
 
@@ -113,14 +142,81 @@ main {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .gallery img {
     width: 150px;
     height: 150px;
     object-fit: cover;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+.about {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2rem;
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.about-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact {
+    padding: 2rem 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+.contact button {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    background-color: #f6c1c1; /* Pastel coral */
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #f7a0a0; /* Slightly darker pastel coral */
 }
 
 footer {
