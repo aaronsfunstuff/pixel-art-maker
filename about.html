@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         /* Add custom styles for the about page */
-        .about-section, .team-section {
+        .about-section, .team-section, .history-section, .process-section, .future-section, .community-section, .collaborations-section {
             margin: 2rem 0;
         }
-        .about-section h2, .team-section h2 {
+        .about-section h2, .team-section h2, .history-section h2, .process-section h2, .future-section h2, .community-section h2, .collaborations-section h2 {
             margin-bottom: 1rem;
         }
-        .about-section p, .team-section p {
+        .about-section p, .team-section p, .history-section p, .process-section p, .future-section p, .community-section p, .collaborations-section p {
             margin-bottom: 1rem;
         }
         .team-member {
@@ -27,6 +27,10 @@
         }
         .team-member h3 {
             margin-top: 0.5rem;
+        }
+        .section-content {
+            max-width: 800px;
+            margin: auto;
         }
     </style>
 </head>
@@ -50,7 +54,7 @@
 
     <main>
         <section class="about-section" id="about">
-            <div class="container">
+            <div class="section-content">
                 <h2>About Us</h2>
                 <p>Welcome to Pixel Art Creator! Our mission is to provide an easy and fun way to create beautiful pixel art. Whether you're an experienced artist or just starting out, our tools are designed to help you bring your ideas to life.</p>
 
@@ -60,42 +64,118 @@
             </div>
         </section>
 
+        <section class="history-section" id="history">
+            <div class="section-content">
+                <h2>Our History</h2>
+                <p>The idea for Pixel Art Creator started in 2022 when a group of friends noticed a lack of intuitive tools for pixel art creation. What began as a small side project quickly gained traction as we shared it with the community.</p>
+
+                <p>After receiving positive feedback and seeing the potential to make a real impact, we decided to dedicate more time and resources to develop the platform further. Our team worked tirelessly to turn the initial concept into a fully-fledged application, incorporating features that users requested and refining the user experience.</p>
+
+                <p>We officially launched Pixel Art Creator in early 2023 and have since continued to expand its features and capabilities, thanks to the support and enthusiasm of our user base.</p>
+            </div>
+        </section>
+
+        <section class="process-section" id="process">
+            <div class="section-content">
+                <h2>Development Process</h2>
+                <p>Our development process focuses on delivering a user-friendly experience while incorporating cutting-edge technology. We follow an agile approach, allowing us to iterate quickly based on user feedback and emerging trends.</p>
+
+                <p>Here's a brief overview of our development process:</p>
+                <ul>
+                    <li><strong>Planning:</strong> We start by gathering requirements and defining the core features of each update.</li>
+                    <li><strong>Design:</strong> Our designers create mockups and prototypes to visualize the user interface and experience.</li>
+                    <li><strong>Development:</strong> Our developers bring the designs to life, writing code and integrating new features.</li>
+                    <li><strong>Testing:</strong> We rigorously test each feature to ensure it meets our quality standards and functions as intended.</li>
+                    <li><strong>Deployment:</strong> Once testing is complete, we deploy updates to our live platform and monitor for any issues.</li>
+                    <li><strong>Feedback:</strong> We actively seek feedback from our users to identify areas for improvement and plan future updates.</li>
+                </ul>
+
+                <p>By maintaining this process, we ensure that Pixel Art Creator remains a top-notch tool for artists of all levels.</p>
+            </div>
+        </section>
+
+        <section class="future-section" id="future">
+            <div class="section-content">
+                <h2>What's Next</h2>
+                <p>We're excited about the future of Pixel Art Creator and have several plans for upcoming features and improvements. Here’s what you can look forward to:</p>
+                <ul>
+                    <li><strong>New Tools:</strong> We plan to add more drawing tools and customization options to enhance your creative process.</li>
+                    <li><strong>Community Features:</strong> We’re working on features that will allow users to share their pixel art creations, collaborate with others, and participate in community events.</li>
+                    <li><strong>Improved Performance:</strong> We’re continuously optimizing the platform to ensure it runs smoothly and efficiently, even with complex art projects.</li>
+                    <li><strong>Educational Resources:</strong> Look out for tutorials, tips, and inspiration to help you improve your pixel art skills and get the most out of Pixel Art Creator.</li>
+                </ul>
+
+                <p>We are committed to listening to our users and adapting to their needs. Stay tuned for exciting updates and new features as we continue to evolve Pixel Art Creator!</p>
+            </div>
+        </section>
+
+        <section class="community-section" id="community">
+            <div class="section-content">
+                <h2>Community Engagement</h2>
+                <p>At Pixel Art Creator, we value our community and strive to create a space where artists can connect, share, and learn from each other. Here’s how we engage with our users:</p>
+                <ul>
+                    <li><strong>Forums and Discussions:</strong> Join our online forums to discuss pixel art techniques, share your work, and get feedback from fellow artists.</li>
+                    <li><strong>Contests and Challenges:</strong> Participate in our regular art contests and challenges to showcase your creativity and win exciting prizes.</li>
+                    <li><strong>Workshops and Tutorials:</strong> Attend our workshops and explore our tutorials to enhance your skills and learn new techniques.</li>
+                    <li><strong>Social Media:</strong> Follow us on social media to stay updated with the latest news, updates, and featured artwork from our community.</li>
+                </ul>
+
+                <p>We believe that a strong community fosters creativity and growth. We encourage you to get involved and make the most of these opportunities!</p>
+            </div>
+        </section>
+
+        <section class="collaborations-section" id="collaborations">
+            <div class="section-content">
+                <h2>Collaborations and Partnerships</h2>
+                <p>Pixel Art Creator is proud to collaborate with various organizations and individuals who share our passion for art and technology. Here’s a look at some of our key collaborations:</p>
+                <ul>
+                    <li><strong>Art Schools and Universities:</strong> We partner with educational institutions to provide students with tools and resources for learning pixel art.</li>
+                    <li><strong>Art Communities:</strong> We work with online art communities to host events, challenges, and exhibitions that showcase the talent of our users.</li>
+                    <li><strong>Software Developers:</strong> We collaborate with other developers to integrate Pixel Art Creator with various applications and platforms, enhancing its functionality.</li>
+                    <li><strong>Influencers and Creators:</strong> We partner with influencers and creators to spread the word about Pixel Art Creator and inspire a broader audience.</li>
+                </ul>
+
+                <p>If you’re interested in collaborating with us or have a partnership proposal, please get in touch through our <a href="contact.html">Contact page</a>.</p>
+            </div>
+        </section>
+
         <section class="team-section" id="team">
-            <div class="container">
+            <div class="section-content">
                 <h2>Meet the Team</h2>
                 <div class="team-member">
-                    <img src="https://media.glamour.com/photos/5a21c69ef43b545fd50fac9a/master/w_2560%2Cc_limit/Justin%2520Baldoni.jpg" alt="Team Member 1">
+                    <img src="https://media.glamour.com/photos/5a21c69ef43b545fd50fac9a/master/w_2560%2Cc_limit/Justin%2520Baldoni.jpg" alt="Jane Doe">
                     <h3>Jane Doe</h3>
                     <p>Lead Developer and Pixel Art Enthusiast</p>
-                    <p>Jane is the creative mind behind Pixel Art Creator, bringing years of experience in software development and a passion for pixel art to the project.</p>
+                    <p>Jane is the creative mind behind Pixel Art Creator, bringing years of experience in software development and a passion for pixel art to the project. She leads the development team and ensures that the platform meets the highest standards of quality and innovation.</p>
                 </div>
 
                 <div class="team-member">
-                    <img src="https://belonging.berkeley.edu/sites/default/files/styles/profile_focal_point/public/johnpowell_headshot_0.jpg" alt="Team Member 2">
+                    <img src="https://belonging.berkeley.edu/sites/default/files/styles/profile_focal_point/public/johnpowell_headshot_0.jpg" alt="John Smith">
                     <h3>John Smith</h3>
                     <p>Designer and User Experience Specialist</p>
-                    <p>John ensures that Pixel Art Creator is not only functional but also user-friendly. His expertise in design helps make the platform intuitive and visually appealing.</p>
+                    <p>John ensures that Pixel Art Creator is not only functional but also user-friendly. His expertise in design helps make the platform intuitive and visually appealing. He is responsible for creating the overall look and feel of the application.</p>
                 </div>
 
                 <div class="team-member">
-                    <img src="https://people.com/thmb/2MEKs1XDk1AhKe2-Y0F_IfbSSE8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/jane-seymour-tout-030824-e3b922e77d0c4d77a3cbe308d1f95f44.jpg" alt="Team Member 3">
+                    <img src="https://people.com/thmb/2MEKs1XDk1AhKe2-Y0F_IfbSSE8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(749x0:751x2)/jane-seymour-tout-030824-e3b922e77d0c4d77a3cbe308d1f95f44.jpg" alt="Emily Johnson">
                     <h3>Emily Johnson</h3>
                     <p>Content and Community Manager</p>
-                    <p>Emily manages our content and engages with the community. She loves hearing from users and is dedicated to making sure everyone has a great experience with Pixel Art Creator.</p>
+                    <p>Emily manages our content and engages with the community. She loves hearing from users and is dedicated to making sure everyone has a great experience with Pixel Art Creator. Emily also oversees our social media and outreach efforts.</p>
                 </div>
             </div>
         </section>
     </main>
 
-     <footer>
+    <footer>
         <div class="container">
             <p>&copy; 2024 Pixel Art Creator. All rights reserved.</p>
-            <p>Follow us on 
-                <a href="#">Twitter</a>, 
-                <a href="#">Instagram</a>, and 
-                <a href="#">Facebook</a>
-            </p>
+            <ul>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="terms.html">Terms of Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
     </footer>
 </body>
 </html>
+
