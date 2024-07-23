@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Creator - Idea Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #ffffff;
+            border-bottom: 2px solid #b3e5fc;
+            padding: 1rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        h1 {
+            font-size: 2rem;
+            color: #333;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            text-shadow: 1px 1px 0 #e0f7fa;
+        }
+        .idea-generator {
+            text-align: center;
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .idea {
+            font-size: 1.5rem;
+            margin: 1.5rem 0;
+            color: #555;
+        }
+        .button {
+            background-color: #b3e5fc;
+            color: #333;
+            border: none;
+            border-radius: 8px;
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #81d4fa;
+        }
+        .save-button, .share-button {
+            margin-top: 1rem;
+            background-color: #c5e1a5;
+            color: #333;
+            padding: 0.5rem 1rem;
+        }
+        .save-button:hover, .share-button:hover {
+            background-color: #aed581;
+        }
+        footer {
+            background: #ffffff;
+            border-top: 2px solid #b3e5fc;
+            padding: 1rem 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Pixel Art Idea Generator</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="idea-generator">
+                <p class="idea" id="idea">Click the button to get a pixel art idea!</p>
+                <button class="button" onclick="generateIdea()">Generate Idea</button>
+                <button class="save-button" onclick="saveIdea()">Save Idea</button>
+                <button class="share-button" onclick="shareIdea()">Share Idea</button>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pixel Art Creator. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="idea.js"></script>
+</body>
+</html>
+
