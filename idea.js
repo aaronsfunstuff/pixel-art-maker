@@ -11,7 +11,7 @@ const ideas = [
     "A pixelated knight in shining armor ready for adventure."
 ];
 
-//  get a random idea
+// to get a random idea
 function generateIdea() {
     const randomIndex = Math.floor(Math.random() * ideas.length);
     document.getElementById('idea').innerText = ideas[randomIndex];
@@ -26,6 +26,15 @@ function saveIdea() {
         // Create a new list item for the saved idea
         const listItem = document.createElement('li');
         listItem.textContent = idea;
+
+        // Create a remove button
+        const removeButton = document.createElement('button');
+        removeButton.textContent = 'Remove';
+        removeButton.onclick = function () {
+            savedIdeasList.removeChild(listItem);
+        };
+
+        listItem.appendChild(removeButton);
         savedIdeasList.appendChild(listItem);
 
         alert('Idea saved: ' + idea);
@@ -34,17 +43,17 @@ function saveIdea() {
     }
 }
 
-// Function to share the current idea
+// to share the current idea
 function shareIdea() {
     const idea = document.getElementById('idea').innerText;
     if (idea !== 'Click the button to get a pixel art idea!') {
-       
         alert('Idea shared: ' + idea);
     } else {
         alert('No idea to share!');
     }
 }
 
+// page with a random idea
 document.addEventListener('DOMContentLoaded', () => {
     generateIdea();
 });
