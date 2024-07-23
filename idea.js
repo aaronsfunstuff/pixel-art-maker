@@ -1,39 +1,50 @@
-// Array of pixel art ideas
 const ideas = [
-    "A retro spaceship flying through space",
-    "A pixelated dragon guarding a treasure",
-    "A small cozy house in a forest",
-    "A pixel art character with a sword",
-    "A vintage arcade machine",
-    "A magical pixelated forest sprite",
-    "A pixel art cat sitting on a window sill",
-    "A pixel art coffee cup with steam",
-    "A retro-style 8-bit cityscape",
-    "A pixelated knight in shining armor"
+    "A retro spaceship flying through space.",
+    "A pixelated dragon guarding a treasure chest.",
+    "A small cozy house nestled in a pixelated forest.",
+    "A pixel art character wielding a sword and shield.",
+    "A vintage arcade machine with colorful buttons.",
+    "A magical sprite dancing in a pixelated forest.",
+    "A pixel art cat sitting on a window sill, watching the world outside.",
+    "A pixel art coffee cup with swirling steam rising from it.",
+    "A retro-style 8-bit cityscape with skyscrapers and neon lights.",
+    "A pixelated knight in shining armor ready for adventure."
 ];
 
-// Function to generate a random pixel art idea
+//  get a random idea
 function generateIdea() {
     const randomIndex = Math.floor(Math.random() * ideas.length);
     document.getElementById('idea').innerText = ideas[randomIndex];
 }
 
-// Function to save the generated idea
+//  save the current idea
 function saveIdea() {
     const idea = document.getElementById('idea').innerText;
+    const savedIdeasList = document.getElementById('saved-ideas-list');
+
     if (idea !== 'Click the button to get a pixel art idea!') {
+        // Create a new list item for the saved idea
+        const listItem = document.createElement('li');
+        listItem.textContent = idea;
+        savedIdeasList.appendChild(listItem);
+
         alert('Idea saved: ' + idea);
     } else {
         alert('No idea to save!');
     }
 }
 
-// Function to share the generated idea
+// Function to share the current idea
 function shareIdea() {
     const idea = document.getElementById('idea').innerText;
     if (idea !== 'Click the button to get a pixel art idea!') {
+       
         alert('Idea shared: ' + idea);
     } else {
         alert('No idea to share!');
     }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    generateIdea();
+});
