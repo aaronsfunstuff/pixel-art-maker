@@ -54,7 +54,23 @@ const ideas = [
     { text: "A pixel art futuristic space station with spacewalkers.", category: "space" },
     { text: "A pixel art retro diner with neon signs and a jukebox.", category: "vintage" },
     { text: "A pixel art fantasy tavern with adventurers and a roaring fire.", category: "fantasy" },
-    { text: "A pixel art cozy bedroom with a large bed and plush pillows.", category: "home" }
+    { text: "A pixel art cozy bedroom with a large bed and plush pillows.", category: "home" },
+    { text: "A pixel art medieval castle under a starry night sky.", category: "fantasy" },
+    { text: "A pixel art futuristic cyborg with advanced technology.", category: "space" },
+    { text: "A pixel art mythical sea creature like a kraken or leviathan.", category: "fantasy" },
+    { text: "A pixel art retro robot in a science lab.", category: "vintage" },
+    { text: "A pixel art whimsical amusement park with a giant wheel.", category: "fantasy" },
+    { text: "A pixel art space rover exploring an alien terrain.", category: "space" },
+    { text: "A pixel art enchanted potion shop with bubbling brews.", category: "fantasy" },
+    { text: "A pixel art cozy farmstead with a barn and animals.", category: "home" },
+    { text: "A pixel art futuristic hoverboard racing through a city.", category: "space" },
+    { text: "A pixel art magical treehouse in a fantasy forest.", category: "fantasy" },
+    { text: "A pixel art vintage train with steam and passengers.", category: "vintage" },
+    { text: "A pixel art cozy reading nook with a window seat.", category: "home" },
+    { text: "A pixel art space alien with multiple eyes and colors.", category: "space" },
+    { text: "A pixel art medieval village festival with banners and stalls.", category: "fantasy" },
+    { text: "A pixel art futuristic jetpack soaring through the sky.", category: "space" },
+    { text: "A pixel art vintage typewriter with papers and ink.", category: "vintage" }
 ];
 
 let savedIdeas = JSON.parse(localStorage.getItem('savedIdeas')) || [];
@@ -163,4 +179,3 @@ function filterIdeas() {
 }
 
 generateIdea();
-
