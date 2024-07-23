@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Creator - Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-info, .faq {
+            margin: 2rem 0;
+        }
+        .contact-info h2, .faq h2 {
+            margin-bottom: 1rem;
+        }
+        .contact-info p, .faq p {
+            margin-bottom: 0.5rem;
+        }
+        .map {
+            margin: 2rem 0;
+        }
+        .map iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
+        .faq {
+            border-top: 1px solid #ccc;
+            padding-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><span class="logo">🎨</span> Pixel Art Creator</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="create.html">Create</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have questions or feedback? We’d love to hear from you!</p>
+                
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p><strong>Address:</strong> 123 Pixel Street, Art City, PA 12345</p>
+                    <p><strong>Phone:</strong> (123) 456-7890</p>
+                    <p><strong>Email:</strong> support@pixelartcreator.com</p>
+                    <p><strong>Follow us on social media:</strong></p>
+                    <p><a href="https://twitter.com/pixelartcreator" target="_blank">Twitter</a> | <a href="https://facebook.com/pixelartcreator" target="_blank">Facebook</a> | <a href="https://instagram.com/pixelartcreator" target="_blank">Instagram</a></p>
+                </div>
+
+                <!-- Embedded Map -->
+                <div class="map">
+                    <h2>Find Us Here</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.133731622586!2d-73.98765548459344!3d40.74881797932656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259ab28b3b5bb%3A0x3a2d3d09d2c7d0!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1617173570613!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <!-- Contact Form -->
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <label for="attachment">Attachment (optional):</label>
+                    <input type="file" id="attachment" name="attachment">
+
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+
+                <!-- FAQ Section -->
+                <div class="faq">
+                    <h2>Frequently Asked Questions</h2>
+                    <p><strong>Q:</strong> How can I get help with using the Pixel Art Creator?</p>
+                    <p><strong>A:</strong> You can visit our <a href="help.html">Help Center</a> or contact us directly via this form.</p>
+
+                    <p><strong>Q:</strong> Do you offer any tutorials or guides?</p>
+                    <p><strong>A:</strong> Yes, we have a <a href="tutorials.html">Tutorials</a> section where you can find guides and tips for creating pixel art.</p>
+
+                    <p><strong>Q:</strong> Can I request new features?</p>
+                    <p><strong>A:</strong> Absolutely! Feel free to let us know what features you’d like to see in future updates by using this contact form.</p>
+                </div>
+            <div class="live-chat">
+                    <h2>Live Chat</h2>
+                    <p>Chat with us in real-time. We’re here to help!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <footer>
+        <div class="container">
+            <p>&copy; 2024 Pixel Art Creator. All rights reserved.</p>
+            <p>Follow us on 
+                <a href="#">Twitter</a>, 
+                <a href="#">Instagram</a>, and 
+                <a href="#">Facebook</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
