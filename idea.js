@@ -8,7 +8,17 @@ const ideas = [
     { text: "A pixel art cat sitting on a window sill, watching the world outside.", category: "home" },
     { text: "A pixel art coffee cup with swirling steam rising from it.", category: "home" },
     { text: "A retro-style 8-bit cityscape with skyscrapers and neon lights.", category: "vintage" },
-    { text: "A pixelated knight in shining armor, ready for battle.", category: "fantasy" }
+    { text: "A pixelated knight in shining armor, ready for battle.", category: "fantasy" },
+    { text: "A pixel art dragon breathing fire in a medieval setting.", category: "fantasy" },
+    { text: "A pixel art robot exploring an alien planet.", category: "space" },
+    { text: "A pixel art bakery with pastries and cakes displayed in the window.", category: "home" },
+    { text: "A retro pixel art video game controller with colorful buttons.", category: "vintage" },
+    { text: "A pixel art pirate ship sailing on a pixelated ocean.", category: "fantasy" },
+    { text: "A pixel art space station orbiting a distant planet.", category: "space" },
+    { text: "A pixel art magical book with glowing runes.", category: "fantasy" },
+    { text: "A pixel art cozy fireplace in a quaint cottage.", category: "home" },
+    { text: "A pixel art steampunk airship flying through clouds.", category: "vintage" },
+    { text: "A pixel art mystical forest with enchanted trees and creatures.", category: "fantasy" }
 ];
 
 let savedIdeas = JSON.parse(localStorage.getItem('savedIdeas')) || [];
