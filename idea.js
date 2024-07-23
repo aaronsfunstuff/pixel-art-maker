@@ -18,7 +18,43 @@ const ideas = [
     { text: "A pixel art magical book with glowing runes.", category: "fantasy" },
     { text: "A pixel art cozy fireplace in a quaint cottage.", category: "home" },
     { text: "A pixel art steampunk airship flying through clouds.", category: "vintage" },
-    { text: "A pixel art mystical forest with enchanted trees and creatures.", category: "fantasy" }
+    { text: "A pixel art mystical forest with enchanted trees and creatures.", category: "fantasy" },
+    { text: "A pixel art underwater scene with colorful fish and coral reefs.", category: "space" },
+    { text: "A pixel art wizard casting a spell in a dark cave.", category: "fantasy" },
+    { text: "A pixel art futuristic city with flying cars and neon signs.", category: "space" },
+    { text: "A pixel art lighthouse on a rocky shore.", category: "home" },
+    { text: "A pixel art circus with clowns and acrobats.", category: "fantasy" },
+    { text: "A pixel art spaceship landing on an alien planet with strange flora.", category: "space" },
+    { text: "A pixel art forest with magical creatures like unicorns and fairies.", category: "fantasy" },
+    { text: "A pixel art cozy coffee shop with books and comfy chairs.", category: "home" },
+    { text: "A pixel art haunted house with spooky decorations.", category: "fantasy" },
+    { text: "A pixel art robot with a cute design working in a lab.", category: "space" },
+    { text: "A pixel art enchanted castle with tall towers and a drawbridge.", category: "fantasy" },
+    { text: "A pixel art cozy mountain cabin in the snow.", category: "home" },
+    { text: "A pixel art futuristic robot pet.", category: "space" },
+    { text: "A pixel art medieval blacksmith forging a sword.", category: "fantasy" },
+    { text: "A pixel art carnival with a ferris wheel and game booths.", category: "fantasy" },
+    { text: "A pixel art underwater city with mermaids and sea creatures.", category: "space" },
+    { text: "A pixel art cozy bookstore with a reading nook.", category: "home" },
+    { text: "A pixel art dragon flying over a mountain range.", category: "fantasy" },
+    { text: "A pixel art steampunk robot with gears and gadgets.", category: "vintage" },
+    { text: "A pixel art space battle with spaceships and laser beams.", category: "space" },
+    { text: "A pixel art rustic farm with animals and crops.", category: "home" },
+    { text: "A pixel art fantasy map with hidden treasures and landmarks.", category: "fantasy" },
+    { text: "A pixel art cozy kitchen with baking supplies and ingredients.", category: "home" },
+    { text: "A pixel art futuristic space pod landing on an alien moon.", category: "space" },
+    { text: "A pixel art magical garden with glowing flowers and creatures.", category: "fantasy" },
+    { text: "A pixel art cozy living room with a TV and comfy furniture.", category: "home" },
+    { text: "A pixel art enchanted forest with glowing mushrooms.", category: "fantasy" },
+    { text: "A pixel art retro arcade with classic game cabinets.", category: "vintage" },
+    { text: "A pixel art futuristic robot city with high-tech buildings.", category: "space" },
+    { text: "A pixel art magical wand with sparkles and stars.", category: "fantasy" },
+    { text: "A pixel art cozy attic with old treasures and memorabilia.", category: "home" },
+    { text: "A pixel art dragon flying through a stormy sky.", category: "fantasy" },
+    { text: "A pixel art futuristic space station with spacewalkers.", category: "space" },
+    { text: "A pixel art retro diner with neon signs and a jukebox.", category: "vintage" },
+    { text: "A pixel art fantasy tavern with adventurers and a roaring fire.", category: "fantasy" },
+    { text: "A pixel art cozy bedroom with a large bed and plush pillows.", category: "home" }
 ];
 
 let savedIdeas = JSON.parse(localStorage.getItem('savedIdeas')) || [];
@@ -127,3 +163,4 @@ function filterIdeas() {
 }
 
 generateIdea();
+
