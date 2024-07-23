@@ -43,8 +43,12 @@
             font-size: 1.5rem;
             margin: 1.5rem 0;
             color: #555;
+            background: #e3f2fd;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid #b3e5fc;
         }
-        .button {
+        .button, .save-button, .share-button {
             background-color: #b3e5fc;
             color: #333;
             border: none;
@@ -53,18 +57,31 @@
             font-size: 1rem;
             cursor: pointer;
             transition: background-color 0.3s;
+            margin: 0.5rem;
         }
-        .button:hover {
+        .button:hover, .save-button:hover, .share-button:hover {
             background-color: #81d4fa;
         }
-        .save-button, .share-button {
-            margin-top: 1rem;
-            background-color: #c5e1a5;
-            color: #333;
-            padding: 0.5rem 1rem;
+        .saved-ideas {
+            margin-top: 2rem;
+            text-align: left;
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .save-button:hover, .share-button:hover {
-            background-color: #aed581;
+        .saved-ideas h2 {
+            margin-top: 0;
+        }
+        .saved-ideas ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .saved-ideas li {
+            background: #e3f2fd;
+            border-radius: 8px;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
         }
         footer {
             background: #ffffff;
@@ -90,6 +107,11 @@
                 <button class="save-button" onclick="saveIdea()">Save Idea</button>
                 <button class="share-button" onclick="shareIdea()">Share Idea</button>
             </section>
+
+            <section class="saved-ideas" id="saved-ideas">
+                <h2>Saved Ideas</h2>
+                <ul id="saved-ideas-list"></ul>
+            </section>
         </div>
     </main>
 
@@ -98,8 +120,8 @@
             <p>&copy; 2024 Pixel Art Creator. All rights reserved.</p>
         </div>
     </footer>
-
-    <script src="idea.js"></script>
+    
+    <script src="idea-generator.js"></script>
 </body>
 </html>
 
