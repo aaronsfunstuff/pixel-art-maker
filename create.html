@@ -4,55 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pixel Art Maker</title>
-    <link rel="stylesheet" href="create.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 </head>
 <body>
-    <header>
+ <header>
         <div class="container">
             <h1><span class="logo">🎨</span> Pixel Art Creator</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
     </header>
-
-    <main>
-        <section class="pixel-art-container">
-            <div class="drawing-tools">
-                <button class="tool-button" id="clear"><i class="fas fa-eraser"></i> Clear</button>
-                <button class="tool-button" id="save"><i class="fas fa-save"></i> Save</button>
-                <button class="tool-button" id="eraser"><i class="fas fa-square-full"></i> Eraser</button>
-                <div class="color-picker">
-                    <input type="color" id="color-picker" value="#000000">
-                </div>
-                <div class="color-swatches">
-                    <div class="color-swatch" style="background-color: #ff0000;" data-color="#ff0000"></div>
-                    <div class="color-swatch" style="background-color: #00ff00;" data-color="#00ff00"></div>
-                    <div class="color-swatch" style="background-color: #0000ff;" data-color="#0000ff"></div>
-                    <div class="color-swatch" style="background-color: #ffff00;" data-color="#ffff00"></div>
-                    <div class="color-swatch" style="background-color: #ff00ff;" data-color="#ff00ff"></div>
-                    <div class="color-swatch" style="background-color: #00ffff;" data-color="#00ffff"></div>
-                </div>
+    <div class="pixel-art-container">
+        <div class="sidebar">
+            <div class="tools">
+                <button id="clear" class="tool-button">Clear</button>
+                <button id="save" class="tool-button">Save</button>
+                <button id="eraser" class="tool-button">Eraser</button>
+                <button id="undo" class="tool-button">Undo</button>
+                <button id="redo" class="tool-button">Redo</button>
+                <button id="zoom-in" class="tool-button">Zoom In</button>
+                <button id="zoom-out" class="tool-button">Zoom Out</button>
+                <button id="mirror" class="tool-button">Mirror</button>
+            </div>
+            <div class="color-picker-container">
+                <label for="color-picker">Pick a Color:</label>
+                <input type="color" id="color-picker" value="#ffb6b9">
+            </div>
+            <div class="color-swatches">
+                <div class="color-swatch" data-color="#ffb6b9" style="background-color: #ffb6b9;"></div>
+                <div class="color-swatch" data-color="#ff999c" style="background-color: #ff999c;"></div>
+                <div class="color-swatch" data-color="#ffcccb" style="background-color: #ffcccb;"></div>
+                <div class="color-swatch" data-color="#4a4e69" style="background-color: #4a4e69;"></div>
+                <div class="color-swatch" data-color="#9a8c98" style="background-color: #9a8c98;"></div>
             </div>
             <div class="grid-size-controls">
                 <label for="grid-size">Grid Size:</label>
-                <input type="number" id="grid-size" value="16" min="4" max="64">
-                <button class="tool-button" id="resize-grid">Resize Grid</button>
+                <input type="number" id="grid-size" value="16" min="4" max="128">
+                <button id="resize-grid" class="tool-button">Resize Grid</button>
             </div>
-            <div class="pixel-art-grid" id="pixel-art-grid">
-            </div>
-        </section>
-    </main>
+        </div>
+        <div class="canvas-wrapper">
+            <div id="pixel-art-grid" class="pixel-art-grid"></div>
+        </div>
+    </div>
     <footer>
-        <p>&copy; 2024 Pixel Art Maker</p>
+        <p>Made with ❤️ by Pixel Artist</p>
     </footer>
     <script src="script.js"></script>
 </body>
