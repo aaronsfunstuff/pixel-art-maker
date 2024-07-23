@@ -70,7 +70,21 @@ const ideas = [
     { text: "A pixel art space alien with multiple eyes and colors.", category: "space" },
     { text: "A pixel art medieval village festival with banners and stalls.", category: "fantasy" },
     { text: "A pixel art futuristic jetpack soaring through the sky.", category: "space" },
-    { text: "A pixel art vintage typewriter with papers and ink.", category: "vintage" }
+    { text: "A pixel art vintage typewriter with papers and ink.", category: "vintage" },
+    { text: "A pixel art magical crystal ball with swirling mist.", category: "fantasy" },
+    { text: "A pixel art space-themed amusement park with rockets and aliens.", category: "space" },
+    { text: "A pixel art cozy farm with a vegetable garden and farm animals.", category: "home" },
+    { text: "A pixel art enchanted forest with a hidden fairy village.", category: "fantasy" },
+    { text: "A pixel art futuristic underwater city with glowing tech.", category: "space" },
+    { text: "A pixel art vintage camera with film and a flash.", category: "vintage" },
+    { text: "A pixel art magical forest with giant flowers and friendly creatures.", category: "fantasy" },
+    { text: "A pixel art space scientist with a lab and equipment.", category: "space" },
+    { text: "A pixel art cozy living room with a fireplace and a cat.", category: "home" },
+    { text: "A pixel art medieval knight riding a pixelated horse.", category: "fantasy" },
+    { text: "A pixel art retro game console with classic games.", category: "vintage" },
+    { text: "A pixel art futuristic space colony on a distant planet.", category: "space" },
+    { text: "A pixel art magical lantern glowing in a dark forest.", category: "fantasy" },
+    { text: "A pixel art cozy garden with flowers and a small pond.", category: "home" }
 ];
 
 let savedIdeas = JSON.parse(localStorage.getItem('savedIdeas')) || [];
