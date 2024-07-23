@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Creator - Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #ffffff;
+            border-bottom: 2px solid #b3e5fc;
+            padding: 1rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        h1 {
+            font-size: 2rem;
+            color: #333;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            text-shadow: 1px 1px 0 #e0f7fa;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 12px;
+            transition: opacity 0.3s;
+        }
+        .gallery-item:hover img {
+            opacity: 0.7;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .gallery-item .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+            border-radius: 12px;
+            text-align: center;
+            padding: 1rem;
+        }
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+        .overlay h3 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        footer {
+            background: #ffffff;
+            border-top: 2px solid #b3e5fc;
+            padding: 1rem 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><span class="logo">🎨</span> Pixel Art Creator</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="gallery">
+                <div class="gallery-item">
+                    <img src="https://i.pinimg.com/564x/b1/24/b3/b124b3fa2943117b01e7d2226829dfa4.jpg" alt="snake">
+                    <div class="overlay">
+                        <h3>Snake</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.creativefabrica.com/wp-content/uploads/2022/12/27/Pikachu-Pixel-Art-54720460-1.png" alt="pikachu">
+                    <div class="overlay">
+                        <h3>Pikachu</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.shutterstock.com/image-vector/food-pixel-art-icons-fast-260nw-1484721701.jpg" alt="Food">
+                    <div class="overlay">
+                        <h3>Food</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://easydrawingguides.com/wp-content/uploads/2021/09/Mario-Pixel-Art-step-by-step-drawing-tutorial-step-10.png" alt="Mario">
+                    <div class="overlay">
+                        <h3>Mario</h3>
+                    </div>
+                </div>             
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pixel Art Creator. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
