@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Creator - Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background-color: #f0f8ff;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 1rem;
+        }
+        .container {
+            max-width: 500px;
+            width: 100%;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            padding: 2rem;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            text-align: center;
+            background: linear-gradient(145deg, #e0f7fa, #ffffff);
+        }
+        h2 {
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+            color: #333;
+            text-shadow: 1px 1px 0 #e0f7fa;
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #555;
+            font-size: 1.1rem;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #b3e5fc;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s, background-color 0.3s;
+            background-color: #ffffff;
+        }
+        .form-group input:focus {
+            border-color: #81d4fa;
+            background-color: #f1f8f8;
+            outline: none;
+        }
+        .form-group input[type="submit"] {
+            background-color: #81d4fa;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 0.75rem;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #4fc3f7;
+        }
+        .form-group .checkbox {
+            display: flex;
+            align-items: center;
+        }
+        .form-group .checkbox input {
+            margin-right: 0.5rem;
+        }
+        .form-group .checkbox label {
+            margin: 0;
+            font-size: 0.875rem;
+            color: #555;
+        }
+        .terms {
+            margin: 1rem 0;
+            font-size: 0.875rem;
+            color: #777;
+        }
+        .terms label {
+            color: #555;
+        }
+        .terms a {
+            color: #81d4fa;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .terms a:hover {
+            text-decoration: underline;
+        }
+        .message {
+            margin-top: 1.5rem;
+            color: #d9534f; /* Error message color */
+            font-size: 0.875rem;
+        }
+        .success {
+            color: #5bc0de; /* Success message color */
+        }
+        .link {
+            margin-top: 1.5rem;
+            font-size: 1rem;
+        }
+        .link a {
+            color: #81d4fa;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Sign Up</h2>
+        <!-- Message display (error or success) -->
+        <div class="message">
+            <!-- Example error message -->
+            <!-- <p class="error">Please fill in all fields.</p> -->
+            <!-- Example success message -->
+            <!-- <p class="success">Account created successfully. You can now log in.</p> -->
+        </div>
+        
+        <form action="signup-handler.php" method="post">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <div class="form-group checkbox">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I agree to the <a href="terms.html">Terms and Conditions</a></label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Sign Up">
+            </div>
+            <div class="link">
+                <p>Already have an account? <a href="login.html">Log in</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
