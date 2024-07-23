@@ -1,0 +1,207 @@
+/* Reset and Global Styles */
+body, h1, h2, h3, p, ul, li, a, img, input, button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f9fb;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header {
+    background-color: #d4f1f9; /* Light pastel blue */
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #4a4e69;
+}
+
+header .logo {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 1.5rem;
+}
+
+header nav ul li a {
+    color: #4a4e69;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #6a6e9c;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Pixel Art Container */
+.pixel-art-container {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 2rem 0;
+    max-width: 800px;
+    width: 100%;
+}
+
+.drawing-tools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.tool-button {
+    padding: 0.8rem 1.2rem;
+    background-color: #ffb6b9; /* Pastel pink */
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tool-button:hover {
+    background-color: #ff999c; /* Darker pastel pink */
+    transform: translateY(-2px);
+}
+
+.color-picker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.color-picker input[type="color"] {
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.color-swatches {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-swatch {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.color-swatch.selected {
+    border-color: #4a4e69;
+    transform: scale(1.1);
+}
+
+.grid-size-controls {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.grid-size-controls input[type="number"] {
+    width: 60px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    transition: border-color 0.3s;
+}
+
+.grid-size-controls input[type="number"]:focus {
+    border-color: #4a4e69;
+}
+
+#pixel-art-grid {
+    display: grid;
+    gap: 1px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pixel-art-grid-cell {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border: 1px solid #ccc;
+}
+
+.pixel-art-grid-cell:hover {
+    background-color: #f5f5f5;
+}
+
+footer {
+    background-color: #4a4e69;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer a {
+    color: #ffb6b9; /* Pastel pink */
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ff999c;
+}
